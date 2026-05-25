@@ -12,7 +12,7 @@ print("- Funções liberadas: sin(x), cos(x), tan(x), sqrt(x), abs(x), pi, e")
 print("-" * 50)
 
 
-caminho_pasta = r"C:\Users\Vinicius Alexandre\AppData\Roaming\PrismLauncher\instances\calculo\minecraft\saves\Calculo\datapacks\projeto_calculo\data\matematica\function"
+caminho_pasta = "adiciona o caminho do datapack"
 nome_arquivo = "gerar_solido.mcfunction"
 caminho_completo = os.path.join(caminho_pasta, nome_arquivo)
 
