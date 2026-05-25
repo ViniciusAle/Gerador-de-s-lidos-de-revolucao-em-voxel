@@ -12,7 +12,7 @@ print("- Funções liberadas: sin(x), cos(x), tan(x), sqrt(x), abs(x), pi, e")
 print("-" * 50)
 
 
-caminho_pasta = r"C:\Users\Vinicius Alexandre\AppData\Roaming\PrismLauncher\instances\calculo\minecraft\saves\Calculo\datapacks\projeto_calculo\data\matematica\function"
+caminho_pasta = ""
 nome_arquivo = "gerar_solido.mcfunction"
 caminho_completo = os.path.join(caminho_pasta, nome_arquivo)
 
@@ -29,7 +29,7 @@ ambiente_matematico = {
 
 def calcular_volume_exato(func_texto, a, b, ambiente):
     volume = 0
-    dx = 0.001  # Simulando fatias microscópicas (dx -> 0)
+    dx = 0.001  
     x_atual = a
     
     while x_atual < b:
@@ -69,7 +69,6 @@ for x_val in range(x_inicio, x_fim + 1):
                 comandos.append(f"setblock ~{x_val} ~{y} ~{z} {bloco}")
                 volume_em_blocos += 1
 
-# Exportação do Arquivo
 os.makedirs(caminho_pasta, exist_ok=True)
 with open(caminho_completo, "w") as arquivo:
     for comando in comandos:
